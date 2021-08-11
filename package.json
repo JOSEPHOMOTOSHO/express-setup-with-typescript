@@ -7,13 +7,13 @@
     "lint": "prettier --check .",
     "format": "prettier --write ."
   },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix, prettier --check . , git add"
-  },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && prettier --write ."
+      "pre-commit":"lint-staged"
     }
+  },
+  "lint-staged": {
+    "*": "prettier --write"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -33,7 +33,6 @@
     "eslint": "~7.32.0",
     "eslint-config-prettier": "~8.3.0",
     "husky": "~7.0.1",
-    "lint-staged": "~11.1.2",
     "prettier": "~2.3.2",
     "typescript": "~4.3.5"
   }
