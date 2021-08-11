@@ -1,9 +1,9 @@
-import {Router} from 'express';
+import { Router } from 'express';
 const router = Router();
 
 /* GET users listing. */
-router.get('/', function(_req, res) {
+router.get('/', function (_req, res) {
   res.send('respond with a resource');
 });
 
-export default router
+export default router;
